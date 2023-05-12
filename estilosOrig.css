@@ -1,0 +1,2013 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+background-color: rgb(227, 205, 11);
+}
+@font-face {
+    font-family: Arabica;
+    src:url(font/Arabica.ttf);
+    font-style: normal;
+}
+@font-face{
+    font-family: Arabela;
+    src: url(font/Arabela.ttf);
+    font-style: normal;
+}
+header{
+    background-image: url(./logos/Por\ camisetas.jpg);
+    background-position:center;
+    /* -webkit-text-stroke: 2px rgba(241, 225, 7, 0.985); */
+    border: 15px solid brown;
+
+
+    background-size: 50% 100%;
+    background-position:left;
+}
+h1{
+    color:rgb(168, 12, 12);
+    text-align: center;
+    font-weight: lighter;
+    font-style:normal;
+    font-size: 110px;
+    margin-top: 10px;
+    font-family:"Arabica";
+    padding: 40px;
+    text-shadow: 1px 1px 2px rgb(245, 245, 241), 0 0 5rem rgb(250, 246, 246), 0 0 0.2em rgb(248, 244, 244);
+}
+article{
+    margin-top: 30px;
+    background-image: url(./logos/Logo\ 6.webp);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:left;
+    height: calc(100vh-50px);
+    border: 10px solid rgb(204, 12, 12);
+}
+article h2{
+    margin-top: 5px;
+    color: rgb(231, 22, 3);    
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 100px;
+    font-family:"Arabica";
+}
+.GruposAD{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-family:"Arabela";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-content:space-between;
+    color: rgba(158, 0, 0, 0.895);
+    text-shadow: 1px 1px 2px rgb(9, 9, 8), 0 0 5rem rgb(10, 1, 1), 0 0 0.2em rgb(17, 2, 2);
+}
+.GruposEH{
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-size: 70px;
+    font-family:"Arabela";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-content:space-around;
+    color: rgba(158, 0, 0, 0.895);
+    text-shadow: 1px 1px 2px rgb(9, 9, 8), 0 0 5rem rgb(10, 1, 1), 0 0 0.2em rgb(17, 2, 2);
+}
+.cont{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px solid rgba(158, 3, 3, 0.859);
+    flex-basis: 280px;
+    padding-left: 40px;
+}
+.GruposAD a{
+    color: rgba(158, 0, 0, 0.895);
+    text-decoration: none;
+
+}
+.GruposEH a{
+    color: rgba(158, 0, 0, 0.895);
+    text-decoration: none;
+}
+.GruposAD a:hover{
+    background-color: rgb(225, 255, 0);
+}
+.GruposEH a:hover{
+    background-color: rgb(225, 255, 0);
+}
+.ball{
+    text-shadow: 2px 2px 5px rgb(251, 251, 249), 0 0 5rem rgb(254, 254, 254), 0 0 0.2em rgb(243, 239, 7);
+}
+.galeria{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 250px 250px;
+    grid-template-areas:
+    "marca1 marca2 marca3"
+    "marca4 marca5 marca6"
+    "marca7 marca8 marca9";
+    grid-gap: 20px;
+}
+.marca:hover{
+    transform: scale(1.09);
+    transition: all 0.9s;
+}
+.marca1{
+    background-image: url(./iconos/nike.png);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid rgb(187, 9, 9);
+}
+.marca2{
+    background-image: url(./iconos/hummel.png);
+    background-size: 70% 150%;
+    background-position: center;
+    border: 5px solid rgb(187, 9, 9);
+}
+.marca3{
+    background-image: url(./iconos/kappa.png);
+    background-size: 80% 180%;;
+    background-position: center;
+    border: 5px solid rgb(187, 9, 9);
+}
+.marca4{
+    background-image: url(./iconos/Majid.png);
+    background-size: 100% 100%;
+    background-position: center;
+    border: 5px solid rgb(187, 9, 9);
+}
+.marca5{
+    background-image: url(./iconos/puma.png);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid rgb(187, 9, 9);
+}
+.marca6{
+    background-image: url(./iconos/newbalance.png);
+    background-size: 80% 200%;
+    background-position: center;
+    border: 5px solid rgb(187, 9, 9);
+}
+.marca7{
+    background-image: url(./iconos/One.png);
+    background-size: 100% 95%;
+    background-position: center;
+    border: 5px solid rgb(187, 9, 9);
+}
+.marca8{
+    background-image: url(./iconos/Marathon.png);
+    background-size: 100% 80%;
+    background-position: center;
+    border: 5px solid rgb(187, 9, 9);
+}
+.marca9{
+    background-image: url(./iconos/adidas.png);
+    background-size: 80% 190%;
+    background-position: center;
+    border: 5px solid rgb(187, 9, 9);
+}
+.marca{
+    color: rgb(1, 56, 34);
+    font-family:"Arabela";
+    text-shadow: 1px 1px 2px rgb(243, 223, 6), 0 0 1em rgb(245, 242, 242), 0 0 0.2em rgb(228, 232, 9);
+    font-size: 50px;
+    font-weight: bolder;
+}
+#one{
+    color: rgb(132, 6, 143);
+    font-weight:bolder;
+}
+#puma{
+    color: rgb(10, 15, 15);
+    font-weight:bolder;
+}
+#adidas{
+    color: rgb(18, 4, 4);
+    font-weight:bolder;
+}
+.galeria a{
+    color: rgb(7, 123, 77);
+    font-family:"Arabela";
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+nav{
+    margin-top: 20px;
+    background-image: url(./logos/Logo\ 15.jpg);
+    background-size: cover;
+    border: 10px solid rgb(204, 12, 12);
+}
+nav h2{
+    margin-top: 5px;
+    color: rgb(230, 230, 239);    font-weight:bolder;
+    font-style:normal;
+    font-size: 100px;
+    font-family:"Arabica";
+}
+div h2{
+    background-image: url(./logos/Logo\ 10.jpeg);
+    background-size: cover;
+    height:fit-content;
+    background-repeat:no-repeat;
+    background-position:left;
+    color:rgb(226, 219, 11);
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 100px;
+    font-family:"Arabica";
+    margin-top: 15px;
+}
+.video{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.subir{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background-color: rgb(142, 63, 63);
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+footer{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family:"Arabica";
+    margin-bottom: 20px;
+}
+footer p{
+    margin-top: 10px;
+}
+footer p.Aviso{
+    margin-top: 10px;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: crimson;
+}
+footer .Redes{
+    margin-top: 10px;
+    letter-spacing: 5px;
+}
+.next{
+    position: fixed;
+    left: 8px;
+    top: 30px;
+    background-color: rgb(142, 63, 63);
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.next2{
+    position: fixed;
+    right: 8px;
+    top: 30px;
+    background-color: rgb(142, 63, 63);
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.nexta{
+    position: fixed;
+    right: 8px;
+    top: 30px;
+    background-color: rgb(142, 63, 63);
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+section h2{
+    margin-top: 5px;
+    color: rgb(230, 230, 239);    
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 100px;
+    font-family:"Arabica"; 
+}
+.grupoA{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content:center;
+    margin-bottom: 20px;
+    font-size: 90px;
+    font-family:"Arabela";
+    margin-top: 10px;
+    padding-left: 40px;
+}
+.grpA{
+    border: 3px solid rgba(241, 233, 233, 0.859);
+}
+.grupoA a{
+    color: rgba(158, 0, 0, 0.895);
+    -webkit-text-stroke: 1px rgba(241, 225, 7, 0.985);
+    text-decoration: none;
+    padding: 50px;
+}
+.titulo h2{
+    color: rgb(177, 22, 118);
+    text-align: center;
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 100px;
+    font-family:"Arabica";
+    margin-top: 10px;
+}
+.titulo{
+    background-image: url(./logos/Logo\ 21.jpg);
+    background-position: left;
+    background-size: cover;
+        height: 750px;
+        width: 2022px;
+}
+.FondoG{
+    background-image: url(./logos/Logo\ 14.avif);
+    background-position: left;
+    background-size: cover;
+}
+#sec3{
+    background-image: url(./logos/Logo\ 14.avif);
+    background-position: left;
+    background-size: 140% 100%;
+
+
+}
+.FondoG h2{
+    margin-left: 10px;
+    margin-top: 5px;
+    color: rgb(188, 32, 5); 
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 100px;
+    font-family:"Arabica";
+}
+#visitante{
+        /* Esto solo para aquellos que la palabra visitante queda mal ubicada */
+    margin-left: 10px;
+    margin-top: 5px;
+    color: rgb(245, 250, 246); 
+    font-style:normal;
+    font-size: 100px;
+    font-family:"Arabica";
+    -webkit-text-stroke: 1px rgba(241, 101, 7, 0.985);
+
+}
+#alternativa{
+    /* Esto solo para aquellos que tienen 3 camisetas */
+    margin-left: 10px;
+    margin-top: 5px;
+    color: rgb(235, 247, 17); 
+    font-style:normal;
+    font-size: 100px;
+    font-family:"Arabica";
+    -webkit-text-stroke: 1px rgba(255, 56, 16, 0.867);
+
+}
+.FondoG a{
+    margin-left: 15px;
+}
+.FondoG img:hover{
+    margin-left: 15px;
+    transform: scale(1.01);
+}
+/* Aca arranca Nike */
+.Nike{
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(252, 255, 255);
+    display: flex;
+    margin-top: 20px;
+}
+.Nike1{
+    background-image: url(./iconos/nike.png);
+    width: 20%;
+    background-size: cover;
+    background-position: center;
+}
+.Nike2 p{
+    font-size: 40px;
+    color: rgb(150, 9, 9);
+    text-align: center;
+    font-style:normal;
+    font-family:"Arabica";
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.Nike3{
+    background-image: url(./iconos/nike.png);
+    width: 20%;
+    background-size: cover;
+    background-position: center;
+    margin-left: 100px;
+}
+.Niketeams{
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(252, 255, 255);
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+
+}
+.Nike4{
+    width: 1100px;
+}
+.Nike4 a{
+    color:rgba(174, 37, 16, 0.888);
+    font-style:normal;
+    font-size: 80px;
+    font-family:"Arabica";
+    text-decoration: none;
+}
+#Arabia {
+    background-image: url(../federaciones/arabiasaudita.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    height: 150px;
+    margin-left: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
+
+}
+#aArabia {
+    color: rgb(1, 117, 11);
+    margin-left: 160px;
+    text-align: right;
+    -webkit-text-stroke: 2px solid rgba(4, 106, 6, 0.634);
+
+
+}
+#Aus {
+    background-image: url(../federaciones/australia.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    height: 150px;
+    margin-left: 10px;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+#aAus {
+    color: rgb(114, 190, 6);
+    -webkit-text-stroke: 2px solid rgba(4, 106, 6, 0.634);
+    margin-left: 160px;
+    text-align: right;
+}
+#Br {
+    background-image: url(../federaciones/brasil.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    height: 150px;
+    margin-left: 10px;
+    padding-top: 50px;
+}
+#aBr {
+    color: rgb(200, 203, 4);
+    -webkit-text-stroke: 2px solid rgb(37, 0, 248);
+    margin-left: 160px;
+    text-align: right;
+}
+#Can {
+    background-image: url(../federaciones/canada.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    height: 150px;
+    margin-left: 10px;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+#aCan{
+    color: rgb(248, 6, 6);
+    -webkit-text-stroke: 2px solid rgb(251, 251, 253);
+    margin-left: 160px;
+    text-align: right;
+}
+#Corea {
+    background-image: url(../federaciones/coreadelsur.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    height: 150px;
+    margin-left: 10px;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+#aCorea{
+    color: rgb(172, 29, 43);
+    -webkit-text-stroke: 3px solid rgb(2, 5, 1);
+    margin-left: 160px;
+    text-align: right;
+}
+#Cr {
+    background-image: url(../federaciones/croacia.png);
+    background-repeat: no-repeat;
+    background-size: 125px;
+    height: 170px;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-top: 50px;
+}
+#aCr{
+    color: rgb(255, 13, 0);
+    -webkit-text-stroke: 3px solid rgb(255, 234, 4);
+    margin-left: 130px;
+    text-align: right;
+}
+#USA {
+    background-image: url(../federaciones/usa.png);
+    background-repeat: no-repeat;
+    background-size: 170px;
+    height: 150px;
+    margin-left: 10px;
+    padding-top: 50px;
+}
+#aUSA{
+    padding: 5px;
+    color: rgb(0, 37, 246);
+    -webkit-text-stroke: 3px solid rgb(224, 6, 6);
+    margin-left: 160px;
+    text-align: right;
+}
+#Francia {
+    background-image: url(../federaciones/francia.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    height: 150px;
+    margin-left: 25px;
+    padding-top: 50px;
+    margin-top: 30px;
+}
+#aFrancia{
+    padding: 5px;
+    color: rgb(2, 51, 150);
+    -webkit-text-stroke: 10% rgb(255, 255, 255);
+    margin-left: 140px;
+    text-align: right;
+}
+#Ing {
+    background-image: url(../federaciones/inglaterra.png);
+    background-repeat: no-repeat;
+    background-size: 145px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding-top: 29px;
+}
+#aIng{
+    padding: 5px;
+    color: rgb(197, 2, 2);
+    -webkit-text-stroke: 3px solid rgb(255, 255, 255);
+    margin-left: 140px;
+    text-align: right;
+}
+#Ned {
+    background-image: url(../federaciones/paisesbajos.png);
+    background-repeat: no-repeat;
+    background-size: 160px;
+    height: 140px;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding-top: 29px;
+}
+#aNed{
+    padding: 5px;
+    color: rgb(249, 149, 9);
+    -webkit-text-stroke: 3px solid rgb(255, 255, 255);
+    margin-left: 140px;
+    text-align: right;
+}
+#Pol {
+    background-image: url(../federaciones/polonia.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-top: 45px;
+}
+#aPol{
+    padding: 5px;
+    color: rgb(204, 9, 9);
+    -webkit-text-stroke: 3px solid rgb(239, 228, 19);
+    margin-left: 160px;
+    text-align: right;
+}
+#Por {
+    background-image: url(../federaciones/portugal.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    height: 150px;
+    margin-left: 10px;
+    padding-top: 50px;
+    margin-top: 30px;
+}
+#aPor{
+    padding: 5px;
+    color: rgb(199, 8, 8);
+    -webkit-text-stroke: 3px solid rgb(13, 117, 8);
+    margin-left: 160px;
+    text-align: right;
+}
+#Qat {
+    background-image: url(../federaciones/A\ Qatar.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    height: 150px;
+    margin-left: 55px;
+    margin-top: 30px;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+#aQat{
+    padding: 5px;
+    color: rgb(138, 28, 28);
+    -webkit-text-stroke: 3px solid rgb(255, 255, 255);
+    margin-left: 115px;
+    text-align: right;
+}
+.Nike5{
+    background-image: url(./logos/Nike\ v2.jpg);
+    width: 125%;
+    background-size: 200% 50%;
+    background-position: top;
+    margin-left: 100px;
+
+}
+
+/* Acá termina Nike y arranca Hummel */
+.Hummel{
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(252, 255, 255);
+    display: flex;
+    margin-top: 20px;
+}
+.Hummel1{
+    background-image: url(./iconos/hummel.png);
+    width: 10%;
+    background-size: cover;
+    background-position: center;
+}
+.Hummel2 p{
+    font-size: 40px;
+    color: rgb(150, 9, 9);
+    text-align: center;
+    font-style:normal;
+    font-family:"Arabica";
+    margin-top: 45px;
+    margin-left: 150px;
+}
+.Hummel3{
+    background-image: url(./iconos/hummel.png);
+    width: 10%;
+    background-size: cover;
+    background-position: center;
+    margin-left: 200px;
+}
+.Hummelteams{
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgba(248, 6, 6, 0.784);
+    margin-top: 20px;
+    display: flex;
+
+}
+.Hummel4 a{
+    color:rgba(174, 37, 16, 0.888);
+    font-style:normal;
+    font-size: 80px;
+    font-family:"Arabica";
+    text-decoration: none;
+
+
+}
+
+.Hummel4 ul {
+    background-image: url(../federaciones/dinamarca.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    height: 150px;
+    padding-top: 35px;
+}
+.Hummel4 h2 {
+    background-image: none;
+    margin-left: 150px;
+
+    color: rgb(247, 247, 247); 
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 90px;
+    font-family:"Arabica";
+
+
+}
+.Hummel4 h3 {
+    background-image: none;
+    margin-left: 10px;
+    margin-top: 35px;
+    color: rgb(203, 200, 13); 
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 60px;
+    font-family:"Arabica";
+
+
+}
+.Hummel4 img{
+    margin-left: 10px;
+}
+.Hummel5{
+    background-image: url(./iconos/hummel.png);
+    width: 80%;
+    background-size: 10% 10%;
+    background-position:right;
+
+}
+.Kappa{
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(252, 255, 255);
+    display: flex;
+    margin-top: 20px;
+}
+.Kappa1{
+    background-image: url(./iconos/kappa.png);
+    width: 10%;
+    background-size: cover;
+    background-position: center;
+}
+.Kappa2 p{
+    font-size: 40px;
+    color: rgb(150, 9, 9);
+    text-align: center;
+    font-style:normal;
+    font-family:"Arabica";
+    margin-top: 45px;
+    margin-left: 150px;
+}
+.Kappa3{
+    background-image: url(./iconos/kappa.png);
+    width: 10%;
+    background-size: cover;
+    background-position: center;
+    margin-left: 200px;
+}
+.Kappateams{
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgba(8, 0, 0, 0.784);
+    margin-top: 20px;
+    display: flex;
+
+}
+.Kappa4 a{
+    color:rgba(174, 37, 16, 0.888);
+    font-style:normal;
+    font-size: 80px;
+    font-family:"Arabica";
+    text-decoration: none;
+
+
+}
+
+.Kappa4 ul {
+    background-image: url(./federaciones/tunez.png);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    height: 150px;
+    padding-top: 18px;
+    margin-top: 20px;
+}
+.Kappa4 h2 {
+    background-image: none;
+    margin-left: 150px;
+
+    color: rgb(247, 247, 247); 
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 90px;
+    font-family:"Arabica";
+
+
+}
+.Kappa4 h3 {
+    background-image: none;
+    margin-left: 10px;
+    margin-top: 35px;
+    color: rgb(203, 200, 13); 
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 60px;
+    font-family:"Arabica";
+
+
+}
+.Kappa4 img{
+    margin-left: 10px;
+}
+.Kappa5{
+    background-image: url(./iconos/kappa.png);
+    width: 80%;
+    background-size: 10% 10%;
+    background-position:right;
+
+}
+.Majid{
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(252, 255, 255);
+    display: flex;
+    margin-top: 20px;
+}
+.Majid1{
+    background-image: url(./iconos/Majid.png);
+    width: 5px;
+    height: 10%;
+    background-position: left;
+    margin-left: 20px;
+    padding-top: 200px;
+    padding-right: 400px;
+    background-size: 100% 100%;
+}
+.Majid2 p{
+    font-size: 40px;
+    color: rgb(150, 9, 9);
+    text-align: center;
+    font-style:normal;
+    font-family:"Arabica";
+    margin-top: 75px;
+    margin-left: 100px;
+}
+.Majid3{
+    background-image: url(./iconos/Majid.png);
+    width: 5px;
+    height: 10%;
+    background-position: right;
+    margin-left: 20px;
+    padding-top: 200px;
+    padding-right: 400px;
+    background-size: 100% 100%;
+}
+.Majidteams{
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(245, 239, 239);
+    margin-top: 20px;
+    display: flex;
+
+}
+.Majid4 a{
+    color:rgba(174, 37, 16, 0.888);
+    font-style:normal;
+    font-size: 80px;
+    font-family:"Arabica";
+    text-decoration: none;
+
+
+}
+
+.Majid4 ul {
+    background-image: url(./federaciones/B\ Iran.png);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    height: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+.Majid4 h2 {
+    background-image: none;
+    margin-left: 150px;
+
+    color: rgb(5, 206, 29); 
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 90px;
+    font-family:"Arabica";
+
+
+}
+.Majid4 h3 {
+    background-image: none;
+    margin-left: 10px;
+    margin-top: 35px;
+    color: rgb(5, 206, 29); 
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 60px;
+    font-family:"Arabica";
+
+
+}
+.Majid4 img{
+    margin-left: 10px;
+}
+.Majid5{
+    background-image: url(./iconos/Majid.png);
+    width: 80%;
+    background-size: 20% 10%;
+    background-position:right;
+
+}
+
+.Mar{
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(252, 255, 255);
+    display: flex;
+    margin-top: 20px;
+}
+.Mar1{
+    background-image: url(./iconos/Marathon.png);
+    width: 50px;
+    height: 50%;
+    background-position: left;
+    margin-left: 20px;
+    padding-top: 200px;
+    padding-right: 400px;
+    background-size: 100% 100%;
+}
+.Mar2 p{
+    font-size: 40px;
+    color: rgb(150, 9, 9);
+    text-align: center;
+    font-style:normal;
+    font-family:"Arabica";
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.Mar3{
+    background-image: url(./iconos/Marathon.png);
+    width: 25px;
+    height: 50%;
+    background-position: right;
+    margin-left: 180px;
+    margin-right: 5px;
+    padding-top: 200px;
+    padding-right: 400px;
+    background-size: 100% 100%;
+}
+.Marteams{
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(247, 243, 17);
+    margin-top: 20px;
+    display: flex;
+
+}
+.Mar a{
+    color:rgba(174, 37, 16, 0.888);
+    font-style:normal;
+    font-size: 80px;
+    font-family:"Arabica";
+    text-decoration: none;
+
+
+}
+
+.Mar4 ul {
+    background-image: url(./federaciones/ecuador.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    height: 200px;
+    margin-left: -30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+.Mar4 h2 {
+    background-image: none;
+    margin-left: 180px;
+
+    color: rgb(43, 1, 255); 
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 90px;
+    font-family:"Arabica";
+
+
+}
+.Mar4 h3 {
+    background-image: none;
+    margin-left: 10px;
+    margin-top: 35px;
+    color: rgb(206, 5, 5); 
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 60px;
+    font-family:"Arabica";
+
+
+}
+.Mar4 img{
+    margin-left: 10px;
+}
+.Mar5{
+    background-image: url(./iconos/Marathon.png);
+    width: 80%;
+    background-size: 30% 10%;
+    background-position:right;
+
+}
+
+.NB {
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(252, 255, 255);
+    display: flex;
+    margin-top: 20px;
+}
+.NB1{
+    background-image: url(./iconos/newbalance.png);
+    width: 40px;
+    height: 50%;
+    background-position: left;
+    margin-left: 20px;
+    padding-top: 200px;
+    padding-right: 350px;
+    background-size: 100% 150%;
+}
+.NB2 p{
+    font-size: 40px;
+    color: rgb(150, 9, 9);
+    text-align: center;
+    font-style:normal;
+    font-family:"Arabica";
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.NB3{
+    background-image: url(./iconos/newbalance.png);
+    width: 25px;
+    height: 50%;
+    background-position: right;
+    margin-left: 180px;
+    margin-right: 5px;
+    padding-top: 200px;
+    padding-left: 350px;
+    background-size: 100% 150%;
+}
+.NBteams{
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(251, 251, 251);
+    margin-top: 20px;
+    display: flex;
+
+}
+.NB a{
+    color:rgba(174, 37, 16, 0.888);
+    font-style:normal;
+    font-size: 80px;
+    font-family:"Arabica";
+    text-decoration: none;
+
+
+}
+
+.NB4 ul {
+    background-image: url(./federaciones/costa_rica.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    height: 200px;
+    margin-left: -30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+.NB4 h2 {
+    background-image: none;
+    margin-left: 180px;
+
+    color: rgb(43, 1, 255); 
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 90px;
+    font-family:"Arabica";
+
+
+}
+.NB4 h3 {
+    background-image: none;
+    margin-left: 10px;
+    margin-top: 35px;
+    color: rgb(206, 5, 5); 
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 60px;
+    font-family:"Arabica";
+
+
+}
+.NB4 img{
+    margin-left: 10px;
+}
+.NB5{
+    background-image: url(./iconos/newbalance.png);
+    width: 80%;
+    background-size: 30% 40%;
+    background-position:right;
+
+}
+
+.O {
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(252, 255, 255);
+    display: flex;
+    margin-top: 20px;
+}
+.O1{
+    background-image: url(./iconos/One.png);
+    width: 20px;
+    height: 10%;
+    background-position: left;
+    margin-left: 20px;
+    padding-top: 200px;
+    padding-right: 350px;
+    background-size: 100% 100%;
+}
+.O2 p{
+    font-size: 40px;
+    color: rgb(150, 9, 9);
+    text-align: center;
+    font-style:normal;
+    font-family:"Arabica";
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.O3{
+    background-image: url(./iconos/One.png);
+    width: 20px;
+    height: 10%;
+    background-position: right;
+    margin-left: 180px;
+    margin-right: 5px;
+    padding-top: 200px;
+    padding-left: 350px;
+    background-size: 100% 100%;
+}
+.Oteam{
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(251, 251, 251);
+    margin-top: 20px;
+    display: flex;
+
+}
+.O a{
+    color:rgba(174, 37, 16, 0.888);
+    font-style:normal;
+    font-size: 80px;
+    font-family:"Arabica";
+    text-decoration: none;
+
+
+}
+
+.O4 ul {
+    background-image: url(./federaciones/camerun.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    height:220px;
+    width: 180px;
+    margin-left: 0px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+.O4 h2 {
+    background-image: none;
+    margin-left: 150px;
+
+    color: rgb(2, 86, 16); 
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 90px;
+    font-family:"Arabica";
+
+
+}
+.O4 h3 {
+    background-image: none;
+    margin-left: 10px;
+    margin-top: 35px;
+    color: rgb(23, 167, 16); 
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 60px;
+    font-family:"Arabica";
+
+
+}
+.O4 img{
+    margin-left: 10px;
+}
+.O5{
+    background-image: url(./iconos/One.png);
+    width: 80%;
+    background-size: 40% 10%;
+    background-position:right;
+
+}
+/* Aca empieza la marca PUMA */
+.PM {
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(252, 255, 255);
+    display: flex;
+    margin-top: 20px;
+}
+.PM1{
+    background-image: url(./iconos/puma.png);
+
+    background-position: left;
+    margin-left: 20px;
+    padding-top: 200px;
+    padding-right: 350px;
+    background-size: 100% 200%;
+}
+.PM2 p{
+    font-size: 40px;
+    color: rgb(150, 9, 9);
+    text-align: center;
+    font-style:normal;
+    font-family:"Arabica";
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.PM3{
+    background-image: url(./iconos/puma.png);
+
+    background-position: right;
+    margin-left: 180px;
+    margin-right: 5px;
+    padding-top: 200px;
+    padding-left: 350px;
+    background-size: 100% 200%;
+}
+.PMteams{
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgba(36, 8, 8, 0.885);
+    margin-top: 20px;
+    display: flex;
+
+}
+.PM4 a{
+    color:rgba(174, 37, 16, 0.888);
+    font-style:normal;
+    font-size: 80px;
+    font-family:"Arabica";
+    text-decoration: none;
+
+
+}
+
+#Uruguay {
+    background-image: url(../federaciones/uruguay.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    height: 150px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: -20px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+#aUruguay {
+    color: rgb(22, 204, 207);
+    margin-left: 160px;
+    text-align: right;
+    font-size: 90px;
+}
+#Serbia {
+    background-image: url(../federaciones/serbia.png);
+    background-repeat: no-repeat;
+    background-size: 140px;
+    height: 150px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+}
+#aSerbia {
+    padding: 5px;
+    color: rgb(228, 228, 225);
+    margin-left: 140px;
+    text-align: right;
+    font-size: 90px;
+}
+#Suiza {
+    background-image: url(../federaciones/suiza.png);
+    background-repeat: no-repeat;
+    background-size: 140px;
+    height: 150px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+#aSuiza {
+    padding: 5px;
+    color: rgb(214, 6, 6);
+    margin-left: 140px;
+    text-align: right;
+    font-size: 90px;
+}
+#Ghana {
+    background-image: url(../federaciones/ghana.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+
+    width: 180px;
+    margin-left: -40px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+}
+#aGhana{
+    padding: 5px;
+    color: rgb(234, 242, 8);
+    margin-left: 160px;
+    text-align: right;
+    font-size: 90px;
+}
+#Senegal {
+    background-image: url(../federaciones/senegal.png);
+    background-repeat: no-repeat;
+    background-size: 140px;
+    height: 150px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+}
+#aSenegal{
+    padding: 5px;
+    color: rgb(205, 53, 19);
+    margin-left: 140px;
+    text-align: right;
+    font-size: 90px;
+}
+#Marruecos {
+    background-image: url(./federaciones/marruecos.png);
+    background-repeat: no-repeat;
+    background-size: 220px;
+
+    margin-left: -50px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+}
+#aMarruecos{
+    padding: 5px;
+    color: rgb(1, 182, 19);
+    margin-left: 170px;
+    text-align: right;
+    font-size: 90px;
+
+}
+.PM5{
+    background-image: url(./logos/Puma\ v2.jpg_large);
+    width: 80%;
+    margin-left: 40px;
+    background-size: 80% 80%;
+    background-position:right;
+
+}
+/* Aca arranca Adidas */
+.Adi {
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgb(252, 255, 255);
+    display: flex;
+    margin-top: 20px;
+}
+.Adi1{
+    background-image: url(./iconos/adidas.png);
+
+    background-position: left;
+    margin-left: 20px;
+    padding-top: 200px;
+    padding-right: 350px;
+    background-size: 95% 150%;
+}
+.Adi2 p{
+    font-size: 40px;
+    color: rgb(150, 9, 9);
+    text-align: center;
+    font-style:normal;
+    font-family:"Arabica";
+    margin-top: 60px;
+    margin-left: 200px;
+}
+.Adi3{
+    background-image: url(./iconos/adidas.png);
+
+    background-position: right;
+    margin-left: 180px;
+    margin-right: 5px;
+    padding-top: 200px;
+    padding-left: 350px;
+    background-size: 95% 150%;
+}
+.Aditeams{
+    border: 5px solid rgb(113, 5, 5);
+    min-height: 150px;
+    width: 100%;
+    background-color: rgba(36, 8, 8, 0.885);
+    margin-top: 20px;
+    display: flex;
+
+}
+.Adi4 a{
+    color:rgba(174, 37, 16, 0.888);
+    font-style:normal;
+    font-size: 80px;
+    font-family:"Arabica";
+    text-decoration: none;
+
+
+}
+#Argentina {
+    background-image: url(../federaciones/argentina.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    height: 280px;
+    margin-left: -40px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+#aArgentina {
+    padding: 5px;
+    color: rgb(12, 178, 215);
+    padding: 5px;
+    margin-left: 220px;
+    text-align: right;
+    font-size: 90px;
+
+}
+#Alemania {
+    background-image: url(../federaciones/alemania.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    height: 280px;
+    margin-left: -30px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+
+}
+#aAlemania {
+    color: rgb(243, 237, 237);
+    padding: 5px;
+    margin-left: 220px;
+    text-align: right;
+    font-size: 90px;
+
+
+}
+#Belgica {
+    background-image: url(../federaciones/belgica.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    height: 280px;
+    margin-left: -40px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+#aBelgica {
+    color: rgb(202, 23, 23);
+    padding: 5px;
+    margin-left: 220px;
+    text-align: right;
+    font-size: 90px;
+
+}
+#España {
+    background-image: url(../federaciones/espana.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    height: 280px;
+    margin-left: -40px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+#aEspaña{
+    color: rgb(255, 251, 30);
+    padding: 5px;
+    margin-left: 220px;
+    text-align: right;
+    font-size: 90px;
+}
+#Gales {
+    background-image: url(../federaciones/gales.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    height: 280px;
+    margin-left: -30px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+#aGales{
+    color: rgb(244, 246, 244);
+    padding: 5px;
+    margin-left: 220px;
+    text-align: right;
+    font-size: 90px;
+}
+#Japon {
+    background-image: url(../federaciones/japon.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    height: 280px;
+    margin-left: -30px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+#aJapon{
+    color: rgb(251, 247, 247);
+    padding: 5px;
+    margin-left: 220px;
+    text-align: right;
+    font-size: 90px;
+}
+#MX {
+    background-image: url(../federaciones/mexico.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    height: 280px;
+    margin-left: -30px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+#aMX{
+    padding: 5px;
+    margin-left: 220px;
+    text-align: right;
+    font-size: 90px;
+    color: rgb(2, 150, 12);
+}
+.Adi5{
+    background-image: url(./logos/Adidas\ v2.jpg);
+    width: 80%;
+    margin-left: 40px;
+    background-size: 60% 40%;
+    background-position:right;
+
+}
+/* personalización por grupos con Bootstrap */
+.cardflex{
+    background-image: url(./logos/Logo\ 21.jpg);
+    background-position: left;
+    background-size:50% 25%;
+
+    text-align: center;
+    border: 7px solid brown;
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+}
+.hgrupos{
+        background-size: 50% 100%;
+        background-position:left;
+        -webkit-text-stroke: 2px rgba(241, 225, 7, 0.985);
+        border: 15px solid brown;
+}
+.hgrupos h1{
+    color:rgb(150, 3, 3);
+    text-align: center;
+    font-weight: lighter;
+    font-style:normal;
+    font-size: 110px;
+    font-family:"Arabica";
+    margin-top: 5px;
+    margin-left: -20px;
+    text-shadow: 1px 1px 2px rgb(245, 245, 241), 0 0 5rem rgb(250, 246, 246), 0 0 0.2em rgb(232, 9, 9);
+
+}
+
+.card-body a:hover{
+    background-color: rgba(223, 223, 6, 0.74);
+    color: rgb(164, 12, 12);
+}
+.card h5{
+    margin-top: 5px;
+    color: rgba(158, 0, 0, 0.895);   
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 70px;
+    font-family:"Arabica";    
+    text-decoration: none;
+    text-align: center;
+
+}
+.btns{
+    margin-left: 85px;
+}
+.card-body{
+    width: max-content;
+}
+/* Personalización del grupo A */
+.btna1{
+    margin-left:70px ;
+    margin-top: 80px;
+}
+.namea1{
+    margin-left:60px ;
+
+}
+.btna2{
+    margin-left:30px ;
+    margin-top: 80px;
+}
+.namea2{
+    margin-left:40px ;
+
+}
+.btna3{
+    margin-left:30px ;
+    margin-top: 80px;
+}
+.namea3{
+    margin-left:25px ;
+
+}
+.btna4{
+    margin-left:70px ;
+}
+.namea4{
+    margin-left:65px ;
+
+}
+/* Personalización del grupo B */
+.btnb1{
+    margin-left:10px ;
+}
+.nameb1{
+    margin-left:1px ;
+    padding-right: 5px;
+    margin-right: 1px;
+
+}
+.titEng{
+    margin-left: -40px;
+}
+.btnb2{
+    margin-left:10px ;
+
+}
+.nameb2{
+    margin-left:60px ;
+
+}
+.btnb3{
+    margin-left:60px ;
+
+}
+.nameb3{
+    margin-left:55px ;
+
+}
+.usab1{
+    border: 1px solid red;
+}
+.btnb4{
+    margin-left:70px ;
+}
+.nameb4{
+    margin-left:65px ;
+
+}
+/* Personalización del grupo C */
+.btnc1{
+    margin-left:70px ;
+    margin-top: 80px;
+}
+.namec1{
+    margin-left:5px ;
+    padding-right: 5px;
+    margin-right: 1px;
+
+}
+.btnc2{
+    margin-left:70px ;
+
+}
+.namec2{
+    margin-left:40px ;
+
+}
+.btnc3{
+    margin-left:70px ;
+    margin-top: 80px;
+
+}
+.namec3{
+    margin-left:45px ;
+
+}
+.usab1{
+    border: 1px solid red;
+}
+.btnc4{
+    margin-left:70px ;
+    margin-top: 80px;
+}
+.namec4{
+    margin-left:50px ;
+
+}
+/* Personalización del grupo D */
+.btnd1{
+    margin-left:70px ;
+
+}
+.named1{
+    margin-left:45px ;
+    padding-right: 5px;
+    margin-right: 1px;
+
+}
+.btnd2{
+    margin-left:70px ;
+
+}
+.named2{
+    margin-left:20px ;
+
+}
+.btnd3{
+    margin-left:70px ;
+
+}
+.named3{
+    margin-left:3px ;
+
+}
+.usab1{
+    border: 1px solid red;
+}
+.btnd4{
+    margin-left:70px ;
+
+}
+.named4{
+    margin-left:50px ;
+
+}
+/* Personalización del grupo E */
+.btne1{
+    margin-left:70px ;
+
+}
+.namee1{
+    margin-left:45px ;
+    padding-right: 5px;
+    margin-right: 1px;
+
+}
+.btne2{
+    margin-left:70px ;
+
+}
+.namee2{
+    margin-left:0px ;
+
+}
+.btne3{
+    margin-left:70px ;
+
+}
+.namee3{
+    margin-left:15px ;
+
+}
+.jp1{
+    border: 1px solid red;
+}
+.btne4{
+    margin-left:70px ;
+
+}
+.namee4{
+    margin-left:55px ;
+
+}
+/* Personalización del grupo F */
+.btnf1{
+    margin-left:70px ;
+
+}
+.namef1{
+    margin-left:45px ;
+    padding-right: 5px;
+    margin-right: 1px;
+
+}
+.btnf2{
+    margin-left:70px ;
+
+}
+.namef2{
+    margin-left:40px ;
+
+}
+.btnf3{
+    margin-left:70px ;
+
+}
+.namef3{
+    margin-left:5px ;
+
+}
+.jp1{
+    border: 1px solid red;
+}
+.btnf4{
+    margin-left:30px ;
+
+}
+.namef4{
+    margin-left:45px ;
+
+}
+/* Personalización del grupo G */
+.bg1{
+    margin-left:70px ;
+
+}
+.g1{
+    margin-left:65px ;
+    padding-right: 5px;
+    margin-right: 1px;
+
+}
+.bg2{
+    margin-left:70px ;
+
+}
+.g2{
+    margin-left:60px ;
+
+}
+.bg3{
+    margin-left:70px ;
+
+}
+.g3{
+    margin-left:5px ;
+
+}
+.sb1{
+    border: 1px solid red;
+}
+.bg4{
+    margin-left:70px ;
+
+}
+.g4{
+    margin-left:25px ;
+
+}
+/* Personalización del grupo H */
+.h1{
+    margin-left:70px ;
+    margin-top: 80px;
+
+}
+.h11{
+    margin-left:30px ;
+    padding-right: 5px;
+    margin-right: 1px;
+
+}
+.h2{
+    margin-left:70px ;
+    margin-top: 80px;
+
+}
+.h22{
+    margin-left:60px ;
+
+}
+.h3{
+    margin-left:70px ;
+    margin-top: 80px;
+
+}
+.h33{
+    margin-left:25px ;
+
+}
+.k1{
+    border: 1px solid red;
+}
+.h4{
+    margin-left:70px ;
+
+}
+.h44{
+    margin-left:45px ;
+
+}
+/* Fin de personalizaciónd de grupos */
+.carrusel h2{
+    background-image: none;
+    color:rgb(147, 8, 8);
+    font-style:normal;
+    font-size: 100px;
+    font-family:"Arabica";
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgb(247, 246, 246), 0 0 1em rgb(184, 83, 58), 0 0 0.2em blue;
+}
+.carrusel p{
+    color:rgb(15, 5, 5);
+    background-color: #fff;
+    font-style:normal;
+    font-size: 60px;
+    font-family:"Arabica";
+    margin-top: 5px;
+    margin-left: 15px;
+    text-align: left;
+    /* text-shadow: 1px 1px 2px rgb(247, 246, 246), 0 0 1em rgb(184, 83, 58), 0 0 0.2em blue; */
+}
+.carrusel{
+    border: 5px solid rgb(113, 51, 51);
+    background-image: url(logos/Logo\ 13.jpg);
+    background-size: 25%;
+    background-repeat: repeat;
+    background-position: bottom;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.carousel-item {
+    margin-bottom: 20px;
+
+}
+.carrusel ul li{
+    border-radius: 50%;
+    background-color: yellow;
+    height: 25px;
+    
+}
+.carousel-control-prev span{
+    background-color: rgb(12, 135, 3);
+    height: 50px;
+    size: 20px;
+}
+.carousel-control-next span{
+    background-color: rgb(12, 135, 3);
+    height: 50px;
+    size: 20px;
+}

@@ -1,0 +1,1844 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Arabica;
+  src: url(font/Arabica.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: Arabela;
+  src: url(font/Arabela.ttf);
+  font-style: normal;
+}
+body {
+  background-color: #53b0e7;
+  background-image: linear-gradient(180deg, #53b0e7 0%, #1a8a7d 19%, #e36d6d 39%, #f1ee0c 60%, #edd62c 80%, #8a8804 100%);
+}
+
+header {
+  background-image: url(./logos/Por\ camisetas.jpg);
+  background-position: center;
+  /* -webkit-text-stroke: 2px rgba(241, 225, 7, 0.985); */
+  border: 15px solid rgb(204, 12, 12);
+  background-size: 50% 100%;
+  background-position: left;
+}
+header h1 {
+  color: rgb(168, 12, 12);
+  text-align: center;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 100px;
+  margin-top: 10px;
+  font-family: "Arabica";
+  padding: 40px;
+  margin-left: -20px;
+  text-shadow: 1px 1px 2px rgb(245, 245, 241), 0 0 5rem rgb(250, 246, 246), 0 0 0.2em rgb(248, 244, 244);
+}
+
+article {
+  margin-top: 30px;
+  background-image: url(./logos/Logo\ 6.webp);
+  background-size: 100% 125%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 100%;
+  border: 10px solid rgb(204, 12, 12);
+}
+article h2 {
+  margin-top: 5px;
+  color: rgb(231, 22, 3);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 100px;
+  font-family: "Arabica";
+}
+article .cont {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 3px solid rgb(180, 3, 3);
+  flex-basis: 280px;
+  padding-left: 40px;
+}
+article .porgrupos {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 70px;
+  font-weight: bolder;
+  font-family: "Arabela";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-content: space-between;
+  color: rgba(158, 0, 0, 0.895);
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+}
+article a {
+  color: rgba(158, 0, 0, 0.895);
+  text-decoration: none;
+}
+article a:hover {
+  background-color: rgba(158, 0, 0, 0.895);
+  color: rgb(225, 255, 0);
+}
+article .ball, article nav .galeria a, nav .galeria article a, article .ball2 {
+  text-shadow: 2px 2px 5px rgb(251, 251, 249), 0 0 5rem rgb(254, 254, 254), 0 0 0.2em rgb(243, 239, 7);
+}
+h4 {
+  font-size: 25px;
+}
+
+nav {
+  margin-top: 20px;
+  background-image: url(./logos/Logo\ 15.jpg);
+  background-size: cover;
+  border: 10px solid rgb(204, 12, 12);
+}
+nav .Camiseta--1 {
+  margin-left: 10px;
+  margin-top: 5px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-family: "Arabica";
+  font-size: 100px;
+  text-shadow: 2px 2px 5px rgb(215, 5, 5);
+  text-shadow: 2px 2px 5px rgb(21, 20, 8);
+}
+nav .Camiseta--2 {
+  margin-left: 10px;
+  margin-top: 5px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-family: "Arabica";
+  font-size: 100px;
+  text-shadow: 2px 2px 5px rgb(215, 5, 5);
+  text-shadow: 2px 2px 5px rgb(243, 239, 7);
+}
+nav .Camiseta--3 {
+  margin-left: 10px;
+  margin-top: 5px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-family: "Arabica";
+  font-size: 100px;
+  text-shadow: 2px 2px 5px rgb(215, 5, 5);
+  text-shadow: 2px 2px 5px rgb(215, 5, 5);
+}
+nav h2 {
+  margin-top: 5px;
+  color: rgb(180, 3, 3);
+  text-shadow: 2px 2px 5px rgb(251, 251, 249), 0 0 5rem rgb(254, 254, 254), 0 0 0.2em rgb(243, 239, 7);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 100px;
+  font-family: "Arabica";
+}
+nav .galeria {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px 250px 250px;
+  grid-template-areas: "marca1 marca2 marca3" "marca4 marca5 marca6" "marca7 marca8 marca9";
+  grid-gap: 20px;
+}
+nav .galeria a {
+  color: rgb(180, 3, 3);
+  font-family: "Arabela";
+  font-size: 50px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+nav .galeria .marca:hover {
+  transform: scale(1.02);
+  transition: all 0.9s;
+}
+nav .galeria .marca1 {
+  background-image: url(./iconos/nike.png);
+  background-size: cover;
+  background-position: center;
+  border: 5px solid rgb(168, 12, 12);
+}
+nav .galeria .marca2 {
+  background-image: url(./iconos/hummel.png);
+  background-size: 70% 150%;
+  background-position: center;
+  border: 5px solid rgb(168, 12, 12);
+}
+nav .galeria .marca3 {
+  background-image: url(./iconos/adidas.png);
+  background-size: 100% 180%;
+  background-position: center;
+  border: 5px solid rgb(168, 12, 12);
+}
+nav .galeria .marca4 {
+  background-image: url(./iconos/Majid.png);
+  background-size: 100% 100%;
+  background-position: center;
+  border: 5px solid rgb(168, 12, 12);
+}
+nav .galeria .marca5 {
+  background-image: url(./iconos/puma.png);
+  background-size: cover;
+  background-position: center;
+  border: 5px solid rgb(168, 12, 12);
+}
+nav .galeria .marca6 {
+  background-image: url(./iconos/newbalance.png);
+  background-size: 80% 200%;
+  background-position: center;
+  border: 5px solid rgb(168, 12, 12);
+}
+nav .galeria .marca7 {
+  background-image: url(./iconos/One.png);
+  background-size: 100% 95%;
+  background-position: center;
+  margin-bottom: 20px;
+  border: 5px solid rgb(168, 12, 12);
+}
+nav .galeria .marca8 {
+  background-image: url(./iconos/Marathon.png);
+  background-size: 100% 80%;
+  background-position: center;
+  margin-bottom: 20px;
+  border: 5px solid rgb(168, 12, 12);
+}
+nav .galeria .marca9 {
+  background-image: url(./iconos/kappa.png);
+  background-size: 90% 190%;
+  background-position: center;
+  margin-bottom: 20px;
+  border: 5px solid rgb(168, 12, 12);
+}
+nav .galeria .marca {
+  text-shadow: 2px 2px 5px rgb(251, 251, 249), 0 0 5rem rgb(254, 254, 254), 0 0 0.2em rgb(243, 239, 7);
+}
+
+.carrusel {
+  border: 5px solid rgb(168, 12, 12);
+  background-image: url(logos/Logo\ 13.jpg);
+  background-size: 25%;
+  background-repeat: repeat;
+  background-position: bottom;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.carrusel ul li {
+  border-radius: 50%;
+  background-color: yellow;
+  height: 25px;
+  margin-bottom: 30px;
+}
+.carrusel .carousel-item {
+  margin-bottom: 30px;
+}
+.carrusel h2 {
+  background-image: none;
+  color: rgba(158, 0, 0, 0.895);
+  font-style: normal;
+  font-size: 100px;
+  font-family: "Arabica";
+  margin-top: 15px;
+  margin-left: 15px;
+  text-align: left;
+  text-shadow: 1px 1px 2px rgb(247, 246, 246), 0 0 1em rgb(171, 184, 58), 0 0 0.2em rgb(255, 247, 0);
+}
+.carrusel p {
+  color: rgb(180, 3, 3);
+  background-color: #fff;
+  font-style: normal;
+  font-size: 60px;
+  font-family: "Arabica";
+  margin-top: 5px;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.video {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./logos/Logo\ 10.jpeg);
+  background-size: cover;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.video h2 {
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 100px;
+  font-family: "Arabica";
+  margin-top: 15px;
+  text-shadow: 1px 1px 2px rgb(247, 246, 246), 0 0 1em rgb(240, 235, 234), 0 0 0.2em rgb(234, 236, 229);
+}
+
+.subir {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background-color: rgb(204, 12, 12);
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Arabica";
+  margin-bottom: 20px;
+}
+footer p {
+  margin-top: 10px;
+  color: rgb(168, 12, 12);
+}
+footer .Aviso {
+  margin-top: 10px;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: rgb(204, 12, 12);
+}
+footer .Redes {
+  margin-top: 10px;
+  letter-spacing: 5px;
+  color: rgb(204, 12, 12);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(204, 12, 12);
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(168, 12, 12);
+  background-color: yellow;
+}
+
+.next {
+  position: fixed;
+  left: 8px;
+  top: 30px;
+  background-color: rgba(158, 0, 0, 0.895);
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.next2 {
+  position: fixed;
+  right: 8px;
+  top: 30px;
+  background-color: rgba(158, 0, 0, 0.895);
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.nexta {
+  position: fixed;
+  right: 8px;
+  top: 30px;
+  background-color: rgba(158, 0, 0, 0.895);
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.link, .cardflex .card-body .btna2, .cardflex .card-body .btna3, .cardflex .card-body .btna1, .cardflex .card-body .btna4, .cardflex .card-body .btnb1, .cardflex .card-body .btnb2, .cardflex .card-body .btnb3, .cardflex .card-body .btnb4, .cardflex .card-body .btnc1, .cardflex .card-body .btnc2, .cardflex .card-body .btnc3, .cardflex .card-body .btnc4, .cardflex .card-body .btnd1, .cardflex .card-body .btnd2, .cardflex .card-body .btnd3, .cardflex .card-body .btnd4, .cardflex .card-body .btne1, .cardflex .card-body .btne2, .cardflex .card-body .btne3, .cardflex .card-body .btne4, .cardflex .card-body .btnf1, .cardflex .card-body .btnf2, .cardflex .card-body .btnf3, .cardflex .card-body .btnf4, .cardflex .card-body .bg1, .cardflex .card-body .bg2, .cardflex .card-body .bg3, .cardflex .card-body .bg4, .cardflex .card-body .h1, .cardflex .card-body .h2, .cardflex .card-body .h3, .cardflex .card-body .h4 {
+  background-color: rgb(180, 3, 3);
+  color: white;
+}
+
+.cardflex {
+  background-position: left;
+  background-size: 15% 50%;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.cardflex .linea {
+  border: 1px solid rgb(180, 3, 3);
+}
+.cardflex a:hover {
+  color: rgb(168, 12, 12);
+  background-color: yellow;
+}
+.cardflex h5 {
+  margin-top: 5px;
+  color: rgba(158, 0, 0, 0.895);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 65px;
+  font-family: "Arabica";
+  text-decoration: none;
+  text-align: center;
+}
+.cardflex .card-body a:hover {
+  text-decoration: none;
+  color: rgb(168, 12, 12);
+  background-color: yellow;
+}
+.cardflex .card-body .btna1 {
+  margin-top: 80px;
+}
+.cardflex .card-body .btna2 {
+  margin-top: 80px;
+}
+.cardflex .card-body .btna3 {
+  margin-top: 80px;
+}
+.cardflex .card-body .btnc1 {
+  margin-top: 80px;
+}
+.cardflex .card-body .btnc3 {
+  margin-top: 80px;
+}
+.cardflex .card-body .btnc4 {
+  margin-top: 80px;
+}
+.cardflex .card-body .h1 {
+  margin-top: 80px;
+}
+.cardflex .card-body .h2 {
+  margin-top: 80px;
+}
+.cardflex .card-body .h3 {
+  margin-top: 80px;
+}
+
+.camiseta--1 {
+  margin-left: 10px;
+  margin-top: 5px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-family: "Arabica";
+  font-size: 100px;
+  text-shadow: 2px 2px 5px rgb(21, 20, 8);
+}
+
+.camiseta--2 {
+  margin-left: 10px;
+  margin-top: 5px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-family: "Arabica";
+  font-size: 100px;
+  text-shadow: 2px 2px 5px rgb(243, 239, 7);
+}
+
+.camiseta--3 {
+  margin-left: 10px;
+  margin-top: 5px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-family: "Arabica";
+  font-size: 100px;
+  text-shadow: 2px 2px 5px rgb(246, 242, 242);
+}
+
+.FondoG {
+  margin-top: 20px;
+  background-image: url(./logos/Logo\ 14.avif);
+  background-position: left;
+  background-size: 120% 100%;
+  border: 10px solid rgb(204, 12, 12);
+}
+
+.Hummel {
+  border: 5px solid rgb(204, 12, 12);
+  height: -moz-max-content;
+  height: max-content;
+  background-color: rgb(252, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  color: rgba(158, 0, 0, 0.895);
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.Hummel .hummel1 .img {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.Hummel .hummel2 p {
+  font-size: 40px;
+  color: rgb(168, 12, 12);
+  text-align: center;
+  font-style: normal;
+  font-family: "Arabica";
+  margin-top: 40px;
+  margin-left: 25px;
+}
+
+.Hummel4 {
+  display: block;
+  text-align: center;
+}
+.Hummel4 ul {
+  background-image: url(./federaciones/dinamarca.png);
+  margin-left: 20px;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  height: 150px;
+  padding-top: 35px;
+  display: inline-block;
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+}
+.Hummel4 h2 {
+  background-image: none;
+  margin-left: 150px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 90px;
+  font-family: "Arabica";
+}
+
+.Hummelteams {
+  min-height: 150px;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+}
+.Hummelteams a {
+  color: rgb(180, 3, 3);
+  font-style: normal;
+  font-size: 80px;
+  font-family: "Arabica";
+  text-decoration: none;
+}
+.Hummelteams h3 {
+  background-image: none;
+  margin-left: 50px;
+  margin-top: 35px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 60px;
+  font-family: "Arabica";
+}
+.Hummelteams img {
+  margin-left: 50px;
+}
+
+.Kappa {
+  border: 5px solid rgb(204, 12, 12);
+  min-height: 150px;
+  background-color: rgb(252, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  color: rgba(158, 0, 0, 0.895);
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.Kappa .Kappa2 p {
+  font-size: 40px;
+  color: rgb(204, 12, 12);
+  text-align: center;
+  font-style: normal;
+  font-family: "Arabica";
+  margin-top: 45px;
+}
+
+.Kappa4 {
+  display: block;
+  text-align: center;
+}
+.Kappa4 ul {
+  background-image: url(./federaciones/tunez.png);
+  margin-left: 20px;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  height: 150px;
+  padding-top: 35px;
+  margin-top: 10px;
+  display: inline-block;
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+}
+.Kappa4 h2 {
+  background-image: none;
+  margin-left: 150px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 90px;
+  font-family: "Arabica";
+}
+
+.Kappateams {
+  min-height: 150px;
+  text-align: center;
+  width: 100%;
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Kappateams a {
+  color: rgb(180, 3, 3);
+  font-style: normal;
+  font-size: 80px;
+  font-family: "Arabica";
+  text-decoration: none;
+}
+.Kappateams h3 {
+  background-image: none;
+  margin-left: 50px;
+  margin-top: 35px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 60px;
+  font-family: "Arabica";
+}
+.Kappateams img {
+  margin-left: 50px;
+}
+
+.Majid {
+  border: 5px solid rgb(204, 12, 12);
+  min-height: 150px;
+  background-color: rgb(252, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  color: rgba(158, 0, 0, 0.895);
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.Majid .Majid2 p {
+  font-size: 40px;
+  color: rgb(204, 12, 12);
+  text-align: center;
+  font-style: normal;
+  font-family: "Arabica";
+  margin-top: 45px;
+}
+
+.Majid4 {
+  display: block;
+  text-align: center;
+}
+.Majid4 ul {
+  background-image: url(./federaciones/B\ Iran.png);
+  margin-left: 20px;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-size: 45% 100%;
+  padding-top: 35px;
+  display: inline-block;
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+}
+.Majid4 h2 {
+  background-image: none;
+  margin-left: 150px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 90px;
+  font-family: "Arabica";
+}
+
+.Majidteams {
+  min-height: 150px;
+  text-align: center;
+  width: 100%;
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Majidteams a {
+  color: rgb(180, 3, 3);
+  font-style: normal;
+  font-size: 80px;
+  font-family: "Arabica";
+  text-decoration: none;
+}
+.Majidteams h3 {
+  background-image: none;
+  margin-left: 50px;
+  margin-top: 35px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 60px;
+  font-family: "Arabica";
+}
+.Majidteams img {
+  margin-left: 50px;
+}
+
+.Mar {
+  border: 5px solid rgb(204, 12, 12);
+  min-height: 150px;
+  background-color: rgb(252, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  color: rgba(158, 0, 0, 0.895);
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.Mar .Mar2 p {
+  font-size: 40px;
+  color: rgb(204, 12, 12);
+  text-align: center;
+  font-style: normal;
+  font-family: "Arabica";
+}
+
+.Mar4 {
+  display: block;
+  text-align: center;
+}
+.Mar4 ul {
+  background-image: url(./federaciones/ecuador.png);
+  margin-left: 50px;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-size: 40% 100%;
+  height: 150px;
+  padding-top: 35px;
+  display: inline-block;
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+}
+.Mar4 h2 {
+  background-image: none;
+  margin-left: 160px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 90px;
+  font-family: "Arabica";
+}
+
+.Marteams {
+  min-height: 150px;
+  text-align: center;
+  width: 100%;
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Marteams a {
+  color: rgb(180, 3, 3);
+  font-style: normal;
+  font-size: 80px;
+  font-family: "Arabica";
+  text-decoration: none;
+}
+.Marteams h3 {
+  background-image: none;
+  margin-left: 50px;
+  margin-top: 35px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 60px;
+  font-family: "Arabica";
+}
+.Marteams img {
+  margin-left: 50px;
+}
+
+.NB {
+  border: 5px solid rgb(204, 12, 12);
+  min-height: 150px;
+  background-color: rgb(252, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  color: rgba(158, 0, 0, 0.895);
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.NB .NB2 p {
+  font-size: 40px;
+  color: rgb(204, 12, 12);
+  text-align: center;
+  font-style: normal;
+  font-family: "Arabica";
+  margin-top: 45px;
+}
+
+.NB4 {
+  display: block;
+  text-align: center;
+}
+.NB4 ul {
+  background-image: url(./federaciones/costa_rica.png);
+  margin-left: 10px;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-size: 40% 110%;
+  height: 150px;
+  padding-top: 35px;
+  display: inline-block;
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+}
+.NB4 h2 {
+  background-image: none;
+  margin-left: 210px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 90px;
+  font-family: "Arabica";
+}
+
+.NBteams {
+  min-height: 150px;
+  text-align: center;
+  width: 100%;
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.NBteams a {
+  color: rgb(180, 3, 3);
+  font-style: normal;
+  font-size: 80px;
+  font-family: "Arabica";
+  text-decoration: none;
+}
+.NBteams h3 {
+  background-image: none;
+  margin-left: 50px;
+  margin-top: 35px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 60px;
+  font-family: "Arabica";
+}
+.NBteams img {
+  margin-left: 50px;
+}
+
+.O {
+  border: 5px solid rgb(204, 12, 12);
+  min-height: 150px;
+  background-color: rgb(252, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  color: rgba(158, 0, 0, 0.895);
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.O .O1 {
+  margin-left: 10px;
+}
+.O .O2 p {
+  font-size: 40px;
+  color: rgb(204, 12, 12);
+  text-align: center;
+  font-style: normal;
+  font-family: "Arabica";
+  margin-top: 45px;
+}
+
+.O4 {
+  display: block;
+  text-align: center;
+}
+.O4 ul {
+  background-image: url(./federaciones/camerun.png);
+  margin-left: 20px;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-size: 35% 100%;
+  padding-top: 35px;
+  display: inline-block;
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+}
+.O4 h2 {
+  background-image: none;
+  margin-left: 180px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 90px;
+  font-family: "Arabica";
+}
+
+.Oteams {
+  min-height: 150px;
+  text-align: center;
+  width: 100%;
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Oteams a {
+  color: rgb(180, 3, 3);
+  font-style: normal;
+  font-size: 80px;
+  font-family: "Arabica";
+  text-decoration: none;
+}
+.Oteams h3 {
+  background-image: none;
+  margin-left: 50px;
+  margin-top: 35px;
+  color: rgb(204, 12, 12);
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 60px;
+  font-family: "Arabica";
+}
+.Oteams img {
+  margin-left: 50px;
+}
+
+.Nike {
+  border: 5px solid rgb(180, 3, 3);
+  min-height: 150px;
+  background-color: rgb(252, 255, 255);
+  display: flex;
+  margin-top: 20px;
+}
+.Nike .Nike2 p {
+  font-size: 40px;
+  color: rgba(158, 0, 0, 0.895);
+  text-align: center;
+  font-style: normal;
+  font-family: "Arabica";
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.Niketeams {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 70px;
+  font-weight: bolder;
+  font-family: "Arabela";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 40px;
+  justify-content: center;
+  align-content: space-between;
+  color: rgba(158, 0, 0, 0.895);
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+}
+.Niketeams a {
+  color: rgba(174, 37, 16, 0.888);
+  font-style: normal;
+  font-size: 80px;
+  font-family: "Arabica";
+  text-decoration: none;
+}
+.Niketeams #Arabia {
+  background-image: url(./federaciones/arabiasaudita.png);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  height: 150px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Niketeams #aArabia {
+  margin-left: 160px;
+  text-align: right;
+  -webkit-text-stroke: 2px solid rgba(4, 106, 6, 0.634);
+}
+.Niketeams #Aus {
+  background-image: url(./federaciones/australia.png);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  height: 150px;
+  margin: auto;
+  padding-top: 50px;
+  margin-top: 20px;
+}
+.Niketeams #aAus {
+  -webkit-text-stroke: 2px solid rgba(4, 106, 6, 0.634);
+  margin-left: 160px;
+  text-align: right;
+}
+.Niketeams #Br {
+  background-image: url(./federaciones/brasil.png);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  height: 150px;
+  margin: auto;
+  padding-top: 50px;
+}
+.Niketeams #aBr {
+  -webkit-text-stroke: 2px solid rgb(37, 0, 248);
+  margin-left: 160px;
+  text-align: right;
+}
+.Niketeams #Can {
+  background-image: url(./federaciones/canada.png);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  height: 150px;
+  margin: auto;
+  padding-top: 50px;
+  margin-top: 20px;
+}
+.Niketeams #aCan {
+  -webkit-text-stroke: 2px solid rgb(251, 251, 253);
+  margin-left: 160px;
+  text-align: right;
+}
+.Niketeams #Corea {
+  background-image: url(./federaciones/coreadelsur.png);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  height: 150px;
+  margin: auto;
+  padding-top: 50px;
+  margin-top: 20px;
+}
+.Niketeams #aCorea {
+  -webkit-text-stroke: 3px solid rgb(2, 5, 1);
+  margin-left: 160px;
+  text-align: right;
+}
+.Niketeams #Cr {
+  background-image: url(./federaciones/croacia.png);
+  background-repeat: no-repeat;
+  background-size: 125px;
+  height: 170px;
+  margin: auto;
+  margin-top: 40px;
+  padding-top: 50px;
+}
+.Niketeams #aCr {
+  -webkit-text-stroke: 3px solid rgb(255, 234, 4);
+  margin-left: 130px;
+  text-align: right;
+}
+.Niketeams #USA {
+  background-image: url(./federaciones/usa.png);
+  background-repeat: no-repeat;
+  background-size: 170px;
+  height: 150px;
+  margin: auto;
+  margin-top: 35px;
+  padding-top: 50px;
+}
+.Niketeams #aUSA {
+  padding: 5px;
+  -webkit-text-stroke: 3px solid rgb(224, 6, 6);
+  margin-left: 160px;
+  text-align: right;
+}
+.Niketeams #Francia {
+  background-image: url(./federaciones/francia.png);
+  background-repeat: no-repeat;
+  background-size: 150px;
+  height: 190px;
+  margin: auto;
+  padding-top: 50px;
+  margin-top: 30px;
+}
+.Niketeams #aFrancia {
+  padding: 5px;
+  -webkit-text-stroke: 10% rgb(255, 255, 255);
+  margin-left: 140px;
+  text-align: right;
+}
+.Niketeams #Ing {
+  background-image: url(./federaciones/inglaterra.png);
+  background-repeat: no-repeat;
+  background-size: 145px;
+  height: 180px;
+  margin: auto;
+  margin-top: 45px;
+  padding-top: 29px;
+}
+.Niketeams #aIng {
+  padding: 5px;
+  -webkit-text-stroke: 3px solid rgb(255, 255, 255);
+  margin-left: 140px;
+  text-align: right;
+}
+.Niketeams #Ned {
+  background-image: url(./federaciones/paisesbajos.png);
+  background-repeat: no-repeat;
+  background-size: 160px;
+  height: 150px;
+  margin: auto;
+  margin-top: 40px;
+  margin-left: 30px;
+  padding-top: 29px;
+}
+.Niketeams #aNed {
+  padding: 5px;
+  -webkit-text-stroke: 3px solid rgb(255, 255, 255);
+  margin-left: 140px;
+  text-align: right;
+}
+.Niketeams #Pol {
+  background-image: url(./federaciones/polonia.png);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  height: 150px;
+  margin: auto;
+  margin-top: 40px;
+  margin-left: 10px;
+  padding-top: 45px;
+}
+.Niketeams #aPol {
+  padding: 5px;
+  -webkit-text-stroke: 3px solid rgb(239, 228, 19);
+  margin-left: 160px;
+  text-align: right;
+}
+.Niketeams #Por {
+  background-image: url(./federaciones/portugal.png);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  height: 150px;
+  margin: auto;
+  padding-top: 50px;
+  margin-top: 30px;
+}
+.Niketeams #aPor {
+  padding: 5px;
+  -webkit-text-stroke: 3px solid rgb(13, 117, 8);
+  margin-left: 160px;
+  text-align: right;
+}
+.Niketeams #Qat {
+  background-image: url(./federaciones/A\ Qatar.png);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  height: 150px;
+  margin: auto;
+  padding-top: 20px;
+  margin-top: 60px;
+}
+.Niketeams #aQat {
+  padding: 5px;
+  -webkit-text-stroke: 3px solid rgb(255, 255, 255);
+  margin-left: 115px;
+  text-align: right;
+}
+.Niketeams .Nike5 {
+  background-image: url(./logos/Nike\ v2.jpg);
+  width: 100%;
+  background-size: 100% 50%;
+  background-position: top;
+}
+
+.PM {
+  border: 5px solid rgb(180, 3, 3);
+  min-height: 150px;
+  background-color: rgb(252, 255, 255);
+  display: flex;
+  margin-top: 20px;
+}
+.PM .PM2 p {
+  font-size: 40px;
+  color: rgba(158, 0, 0, 0.895);
+  text-align: center;
+  font-style: normal;
+  font-family: "Arabica";
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.PMteams {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 70px;
+  font-weight: bolder;
+  font-family: "Arabela";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 40px;
+  justify-content: center;
+  align-content: space-between;
+  color: rgba(158, 0, 0, 0.895);
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+}
+.PMteams a {
+  color: rgb(180, 3, 3);
+  font-style: normal;
+  font-size: 80px;
+  font-family: "Arabica";
+  text-decoration: none;
+}
+.PMteams #Uruguay {
+  background-image: url(./federaciones/uruguay.png);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  height: 150px;
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.PMteams #aUruguay {
+  color: rgb(204, 12, 12);
+  margin-left: 180px;
+  text-align: right;
+  font-size: 90px;
+}
+.PMteams #Serbia {
+  background-image: url(./federaciones/serbia.png);
+  background-repeat: no-repeat;
+  background-size: 140px;
+  height: 150px;
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.PMteams #aSerbia {
+  padding: 5px;
+  color: rgb(204, 12, 12);
+  margin-left: 160px;
+  text-align: right;
+  font-size: 90px;
+}
+.PMteams #Suiza {
+  background-image: url(./federaciones/suiza.png);
+  background-repeat: no-repeat;
+  background-size: 140px;
+  height: 150px;
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.PMteams #aSuiza {
+  padding: 5px;
+  color: rgb(204, 12, 12);
+  margin-left: 160px;
+  text-align: right;
+  font-size: 90px;
+}
+.PMteams #Ghana {
+  background-image: url(./federaciones/ghana.png);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  height: 150px;
+  width: 100%;
+  margin: auto;
+  margin-top: 25px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.PMteams #aGhana {
+  color: rgb(204, 12, 12);
+  margin-left: 180px;
+  text-align: right;
+  font-size: 90px;
+}
+.PMteams #Senegal {
+  background-image: url(./federaciones/senegal.png);
+  background-repeat: no-repeat;
+  background-size: 140px;
+  height: 180px;
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.PMteams #aSenegal {
+  padding: 5px;
+  color: rgb(204, 12, 12);
+  margin-left: 160px;
+  text-align: right;
+  font-size: 90px;
+}
+.PMteams #Marruecos {
+  background-image: url(./federaciones/marruecos.png);
+  background-repeat: no-repeat;
+  height: 190px;
+  background-size: 240px;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.PMteams #aMarruecos {
+  padding: 5px;
+  color: rgb(204, 12, 12);
+  margin-left: 210px;
+  text-align: right;
+  font-size: 90px;
+}
+
+.Adi {
+  border: 5px solid rgb(180, 3, 3);
+  background-color: rgb(252, 255, 255);
+  background-size: 50%;
+  display: flex;
+  margin-top: 20px;
+}
+.Adi .Adi2 p {
+  font-size: 40px;
+  color: rgba(158, 0, 0, 0.895);
+  text-align: center;
+  font-style: normal;
+  font-family: "Arabica";
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.Aditeams {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 70px;
+  font-weight: bolder;
+  font-family: "Arabela";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 40px;
+  justify-content: center;
+  align-content: space-between;
+  color: rgba(158, 0, 0, 0.895);
+  text-shadow: 1px 1px 2px rgb(14, 14, 9), 0 0 5rem rgb(245, 243, 243), 0 0 0.2em rgb(245, 241, 241);
+}
+.Aditeams a {
+  color: rgba(174, 37, 16, 0.888);
+  font-style: normal;
+  font-family: "Arabica";
+  text-decoration: none;
+}
+.Aditeams #Alemania {
+  background-image: url(./federaciones/alemania.png);
+  background-repeat: no-repeat;
+  background-size: 250px;
+  height: 280px;
+  margin: auto;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+.Aditeams #aAlemania {
+  padding: 5px;
+  margin-left: 220px;
+  text-align: right;
+  font-size: 90px;
+}
+.Aditeams #Argentina {
+  background-image: url(./federaciones/argentina.png);
+  background-repeat: no-repeat;
+  background-size: 250px;
+  height: 280px;
+  margin: auto;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+.Aditeams #aArgentina {
+  padding: 5px;
+  margin-left: 220px;
+  text-align: right;
+  font-size: 90px;
+}
+.Aditeams #Belgica {
+  background-image: url(./federaciones/belgica.png);
+  background-repeat: no-repeat;
+  background-size: 250px;
+  height: 280px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.Aditeams #aBelgica {
+  padding: 5px;
+  margin-left: 220px;
+  text-align: right;
+  font-size: 90px;
+}
+.Aditeams #España {
+  background-image: url(./federaciones/espana.png);
+  background-repeat: no-repeat;
+  background-size: 250px;
+  height: 280px;
+  margin: auto;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+.Aditeams #aEspaña {
+  padding: 5px;
+  margin-left: 220px;
+  text-align: right;
+  font-size: 90px;
+}
+.Aditeams #Gales {
+  background-image: url(./federaciones/gales.png);
+  background-repeat: no-repeat;
+  background-size: 240px;
+  height: 280px;
+  margin: auto;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+.Aditeams #aGales {
+  padding: 5px;
+  margin-left: 220px;
+  text-align: right;
+  font-size: 90px;
+}
+.Aditeams #Japon {
+  background-image: url(./federaciones/japon.png);
+  background-repeat: no-repeat;
+  background-size: 250px;
+  height: 280px;
+  margin: auto;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+.Aditeams #aJapon {
+  padding: 5px;
+  margin-left: 220px;
+  text-align: right;
+  font-size: 90px;
+}
+.Aditeams #MX {
+  background-image: url(./federaciones/mexico.png);
+  background-repeat: no-repeat;
+  background-size: 250px;
+  height: 280px;
+  margin: auto;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+.Aditeams #aMX {
+  padding: 5px;
+  margin-left: 220px;
+  text-align: right;
+  font-size: 90px;
+}
+
+@media (min-width: 320px) {
+  .carrusel {
+    text-align: center;
+  }
+  .carrusel h2 {
+    font-size: 80px;
+  }
+  .carrusel .editor p {
+    font-size: 40px;
+  }
+  .carrusel .edicion {
+    margin-left: -13px;
+    width: 100vw;
+    height: 100vh;
+  }
+  .video h2 {
+    font-size: 75px;
+  }
+  nav .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+  }
+  .Marteams img {
+    width: 300px;
+    height: 300px;
+  }
+  .Mar4 h2 {
+    margin-left: 120px;
+  }
+  .Mar .Mar2 {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .Mar1 img {
+    width: 30vw;
+    height: 20vh;
+  }
+  .Hummel .hummel2 p {
+    margin-top: 5px;
+  }
+  .Kappa .Kappa2 p {
+    margin-top: 5px;
+    font-size: 40px;
+  }
+  .Kappateams img {
+    width: 400px;
+    height: 400px;
+  }
+  .NBteams img {
+    height: 400px;
+    width: 400px;
+  }
+  .NB .NB2 p {
+    margin-top: 20px;
+  }
+  .NB4 h2 {
+    margin-left: 160px;
+    font-size: 80px;
+    padding-top: 20px;
+  }
+  .Majid1 img {
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 20vw;
+    height: 20vh;
+  }
+  .Majid .Majid2 {
+    margin-left: 15px;
+  }
+  .Majid .Majid2 p {
+    font-size: 35px;
+    margin-top: 15px;
+  }
+  .O .O1 {
+    height: 1vh;
+  }
+  .O .O2 p {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+  .O .O2 {
+    margin-top: 5px;
+  }
+  .O4 ul {
+    background-size: 25% 100%;
+    margin-left: 25px;
+  }
+  .Oteams img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (min-width: 564px) {
+  .O .O1 {
+    height: 1vh;
+    margin-bottom: 15px;
+  }
+  .O4 ul {
+    margin-left: 60px;
+  }
+  .O4 h2 {
+    margin-left: 100px;
+  }
+}
+@media (min-width: 576px) {
+  .Adi2, .Nike2 {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .Nike .Nike2 p {
+    font-size: 40px;
+    margin-top: 5px;
+  }
+  .Hummel .hummel2 p {
+    margin-top: 15px;
+  }
+  .Kappa .Kappa2 p {
+    margin-top: 25px;
+  }
+  .Majid .Majid2 {
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 674px) {
+  .O .O2 {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 694px) {
+  .Marteams img {
+    width: 500px;
+    height: 500px;
+  }
+  .Adi2 {
+    margin-left: 10px;
+    margin-top: 25px;
+  }
+  .Nike2 {
+    margin-left: 10px;
+    margin-top: 25px;
+  }
+  .Nike .Nike2 p {
+    font-size: 40px;
+  }
+  .Nike1 .img {
+    width: 30vw;
+    height: 30vh;
+  }
+  .PM .PM2 {
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  .Hummel .hummel2 p {
+    margin-top: 15px;
+  }
+  .Kappa .Kappa2 p {
+    margin-top: 25px;
+  }
+  .Kappa .Kappa2 {
+    margin-top: 15px;
+  }
+  .NBteams img {
+    height: 450px;
+    width: 450px;
+  }
+  .NB .NB2 {
+    margin-top: 15px;
+  }
+  .Majid .Majid2 {
+    margin-left: 25px;
+    margin-top: 5px;
+  }
+  .Majid .Majid2 p {
+    font-size: 40px;
+  }
+}
+@media (min-width: 815px) {
+  .Hummel .hummel2 p {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 873px) {
+  .carrusel {
+    text-align: center;
+  }
+  .carrusel h2 {
+    font-size: 90px;
+  }
+  .carrusel .editor p {
+    font-size: 50px;
+  }
+  nav .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px;
+  }
+  .Mar .Mar2 {
+    margin-top: 25px;
+  }
+  .O .O2 {
+    margin-top: 15px;
+  }
+  .O .O2 p {
+    font-size: 40px;
+  }
+  .PM .PM2 {
+    margin-left: 10px;
+    margin-top: 35px;
+  }
+  .NB .NB2 {
+    margin-top: 25px;
+  }
+  .Majid .Majid2 {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 946px) {
+  .Oteams img {
+    height: 500px;
+    width: 500px;
+  }
+  .O .O2 {
+    margin-top: 15px;
+  }
+  .O .O2 p {
+    font-size: 50px;
+  }
+  .O1 img {
+    margin-top: 15px;
+  }
+  .Adi2 {
+    margin-left: 120px;
+    margin-top: 25px;
+  }
+  .Adi1 .img {
+    margin-left: 40px;
+    width: 15vw;
+    height: 20vh;
+  }
+  .Adi .Adi2 p {
+    font-size: 60px;
+  }
+  .Nike2 {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .Nike .Nike2 p {
+    font-size: 50px;
+  }
+  .Nike1 .img {
+    width: 20vw;
+    height: 30vh;
+  }
+  .Hummel .hummel2 p {
+    margin-top: 30px;
+    font-size: 60px;
+  }
+  .Hummel .hummel1 .img {
+    width: 15vw;
+    height: 20vh;
+    margin-left: 10px;
+  }
+  .Kappa .Kappa2 p {
+    margin-top: 25px;
+    font-size: 60px;
+  }
+  .Kappa .Kappa2 {
+    margin-top: 15px;
+  }
+  .Kappa1 img {
+    width: 15vw;
+    height: 20vh;
+  }
+  .Kappateams img {
+    width: 500px;
+    height: 500px;
+  }
+  .NB1 img {
+    width: 20vw;
+    height: 22vh;
+  }
+  .NB .NB2 p {
+    font-size: 40px;
+  }
+  .NB .NB2 {
+    margin-top: 10px;
+  }
+  .NBteams img {
+    height: 500px;
+    width: 500px;
+  }
+  .Majidteams img {
+    height: 500px;
+    width: 500px;
+  }
+}
+@media (min-width: 1044px) {
+  .Mar1 img {
+    width: 20vw;
+    height: 20vh;
+  }
+  .Mar .Mar2 {
+    margin-top: 30px;
+  }
+  .Mar .Mar2 p {
+    font-size: 60px;
+  }
+  .Nike2 {
+    margin-left: 10px;
+    margin-top: 60px;
+  }
+  .PM .PM2 {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .PM .PM2 p {
+    font-size: 60px;
+  }
+  .PM1 .img {
+    width: 30vw;
+    height: 35vh;
+  }
+  .NB .NB2 p {
+    font-size: 60px;
+  }
+  .NB .NB2 {
+    margin-top: 25px;
+  }
+  .O .O2 {
+    margin-top: 5px;
+  }
+  .O .O2 p {
+    font-size: 60px;
+  }
+  .O1 img {
+    margin-top: 1px;
+  }
+}
+@media (min-width: 1244px) {
+  .PM .PM2 {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .PM .PM2 p {
+    font-size: 60px;
+  }
+  .PM1 .img {
+    width: 15vw;
+    height: 20vh;
+  }
+  .Majid1 img {
+    width: 15vw;
+    height: 20vh;
+  }
+  .Majid .Majid2 p {
+    font-size: 60px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
