@@ -1791,13 +1791,17 @@ a:hover {
   .Mar .Mar2 p {
     font-size: 60px;
   }
-  .Nike2 {
+  .Nike .Nike2 {
     margin-left: 10px;
-    margin-top: 60px;
+    margin-top: 50px;
+  }
+  .Adi .Adi2 {
+    margin-left: 10px;
+    margin-top: 50px;
   }
   .PM .PM2 {
     margin-left: 10px;
-    margin-top: 5px;
+    margin-top: 50px;
   }
   .PM .PM2 p {
     font-size: 60px;
@@ -1825,7 +1829,7 @@ a:hover {
 @media (min-width: 1244px) {
   .PM .PM2 {
     margin-left: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .PM .PM2 p {
     font-size: 60px;
