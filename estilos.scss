@@ -1874,15 +1874,21 @@ h2 {
 }
 @media (min-width: 1010px){
     .Adi .Adi2 {
-    margin-left: 10px;
-    margin-top: 20px;
-    font-size: 60px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .Adi .Adi2 p {
+        font-size: 60px;
     }
     .PM .PM2{
-    margin-left: 10px;
-    margin-top: 20px;
-    font-size: 60px;
+        margin-left: 10px;
+        margin-top: 20px;
+    
     }
+    .PM .PM2 p{
+        font-size: 60px;
+    }
+
 }
 @media (min-width: 1044px){
     .Mar1 img{
@@ -1896,14 +1902,6 @@ h2 {
         font-size: 60px;
     }
     .Nike .Nike2{
-        margin-left: 10px;
-        margin-top: 50px;
-    }
-    .Adi .Adi2 {
-        margin-left: 10px;
-        margin-top: 50px;
-    }
-    .PM .PM2{
         margin-left: 10px;
         margin-top: 50px;
     }
