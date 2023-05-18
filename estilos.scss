@@ -122,7 +122,7 @@ nav{
             font-weight:bolder;
             font-style:normal;
             font-family:"Arabica";
-            font-size: 90px;
+            font-size: 80px;
             text-shadow: 2px 2px 5px rgb(215, 5, 5);
             text-shadow: $shadow;
         }
@@ -458,7 +458,7 @@ $nombre: (
         font-weight:bolder;
         font-style:normal;
         font-family:"Arabica";
-        font-size: 90px;
+        font-size: 80px;
         text-shadow: $shadow;
     }
 }
@@ -1872,6 +1872,18 @@ h2 {
         width: 500px;
     }
 }
+@media (min-width: 1010px){
+    .Adi .Adi2 {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 60px;
+    }
+    .PM .PM2{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 60px;
+    }
+}
 @media (min-width: 1044px){
     .Mar1 img{
         width: 20vw;
@@ -1919,6 +1931,7 @@ h2 {
         margin-top: 1px;
     }
 }
+
 @media (min-width: 1244px){
     .PM .PM2{
         margin-left: 10px;
@@ -1955,12 +1968,5 @@ h2 {
         margin-left: 10px;
         margin-top: 20px;
     }
-    .Adi .Adi2 {
-        margin-left: 10px;
-        margin-top: 20px;
-    }
-    .PM .PM2{
-        margin-left: 10px;
-        margin-top: 20px;
-    }
+
 }

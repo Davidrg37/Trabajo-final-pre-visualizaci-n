@@ -107,7 +107,7 @@ nav .Camiseta--1 {
   font-weight: bolder;
   font-style: normal;
   font-family: "Arabica";
-  font-size: 90px;
+  font-size: 80px;
   text-shadow: 2px 2px 5px rgb(215, 5, 5);
   text-shadow: 2px 2px 5px rgb(21, 20, 8);
 }
@@ -118,7 +118,7 @@ nav .Camiseta--2 {
   font-weight: bolder;
   font-style: normal;
   font-family: "Arabica";
-  font-size: 90px;
+  font-size: 80px;
   text-shadow: 2px 2px 5px rgb(215, 5, 5);
   text-shadow: 2px 2px 5px rgb(243, 239, 7);
 }
@@ -129,7 +129,7 @@ nav .Camiseta--3 {
   font-weight: bolder;
   font-style: normal;
   font-family: "Arabica";
-  font-size: 90px;
+  font-size: 80px;
   text-shadow: 2px 2px 5px rgb(215, 5, 5);
   text-shadow: 2px 2px 5px rgb(215, 5, 5);
 }
@@ -441,7 +441,7 @@ a:hover {
   font-weight: bolder;
   font-style: normal;
   font-family: "Arabica";
-  font-size: 90px;
+  font-size: 80px;
   text-shadow: 2px 2px 5px rgb(21, 20, 8);
 }
 
@@ -452,7 +452,7 @@ a:hover {
   font-weight: bolder;
   font-style: normal;
   font-family: "Arabica";
-  font-size: 90px;
+  font-size: 80px;
   text-shadow: 2px 2px 5px rgb(243, 239, 7);
 }
 
@@ -463,7 +463,7 @@ a:hover {
   font-weight: bolder;
   font-style: normal;
   font-family: "Arabica";
-  font-size: 90px;
+  font-size: 80px;
   text-shadow: 2px 2px 5px rgb(246, 242, 242);
 }
 
@@ -1780,6 +1780,18 @@ a:hover {
     width: 500px;
   }
 }
+@media (min-width: 1010px) {
+  .Adi .Adi2 {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 60px;
+  }
+  .PM .PM2 {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 60px;
+  }
+}
 @media (min-width: 1044px) {
   .Mar1 img {
     width: 20vw;
@@ -1858,14 +1870,6 @@ a:hover {
     margin-top: 10px;
   }
   .Nike .Nike2 {
-    margin-left: 10px;
-    margin-top: 20px;
-  }
-  .Adi .Adi2 {
-    margin-left: 10px;
-    margin-top: 20px;
-  }
-  .PM .PM2 {
     margin-left: 10px;
     margin-top: 20px;
   }
